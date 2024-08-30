@@ -1,0 +1,300 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+header {
+    width: 100%;
+    position: fixed; /* Make the header fixed so it stays at the top */
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding-right: 300px;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.faq-button {
+    background-color: #7e57c2;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; /* Adjust padding to account for fixed header */
+    background: url('images/homepageimage1.png') no-repeat center center; /* Add your background image path here */
+    background-size: cover; /* Ensures the background image covers the entire section */
+    position: relative;
+    min-height: 100vh; /* Make sure hero section fills the viewport */
+}
+
+.hero-content {
+    max-width: 40%;
+    color: #333;
+    padding-left: 12vw;
+    padding-top: 50px;
+}
+
+.hero-content h1 {
+    font-size: 73px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #7e57c2;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.hero-image{
+    position: absolute;
+    padding-left: 0;
+    padding-top: -100px;
+    margin-top: -70px;
+}
+.hero-image img{
+    width: 100vw;
+}
+.about{
+    background-color: rgb(250, 246, 246);
+}
+.srtabout{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: grid;
+    padding-top: 50px;
+}
+.aboutcontent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mission{
+    border-radius: 15px;
+    border-color: #7e57c2;
+    width: 340px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.contenttitle{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 300px;
+    margin-left: 15px;
+    
+}
+.servicetitle{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.ourproducts{
+    display: flex;
+    flex-wrap: wrap;
+}
+.products{
+    border-radius: 15px;
+    box-shadow: 0 4px  8px 0 rgba(0,0,0,0.2);
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.servtitle{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.teamtitle{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.teammembers{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.teamcontainer{
+    border-radius: 15px;
+    box-shadow: 0 4px 8px  0 rgba(0,0,0,0.2);
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.membername{
+    display: grid;
+    justify-content: center;
+}
+.memberposition{
+    display: grid;
+    justify-content: center;
+}
+.contacttitle{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.contactinfo{
+    position: relative;
+    width: 900px;
+    height: 600px;
+    background: transparent;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+.inputbox{
+    position: relative;
+    width: 550px;
+    height: 50px;
+    border-bottom: 2px solid black ;
+    margin: 30px 0;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    top: -5px;
+}
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: black;
+    font-weight: 600;
+}
+
+.inputbox .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: black;
+    line-height: 57px;
+}
+.btn{
+    margin-top: 35px;
+    margin-left: 250px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #7e57c2;
+    font-size: 1.2em;
+    color: whitesmoke;
+    font-weight: 600;
+}
+.cominfor{
+    margin-top: 50px;
+}
+.info .thecon{
+    font-size: 1.2em;
+}
+.infor p{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.conimg{
+    position: absolute;
+    left: -320px;
+    margin-top: 270px;
+    display: grid;
+    justify-content: space-around;
+}
+footer{
+    margin-top: 250px;
+    background-color: #7e57c2;
+    height: 400px;
+}
+.footercontent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+    color: whitesmoke;
+}
+.complogo{
+    display: grid;
+    justify-content: center;
+}
